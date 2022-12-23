@@ -1,0 +1,54 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top left,rgb(40, 65, 75), rgb(9, 95, 95),rgb(115, 206, 115));
+    overflow: hidden;
+    
+}
+h2{
+    font-weight: 500;
+    animation: h2 5s infinite ease-in-out;
+}
+@keyframes h2{
+    0%{
+        color: rgb(250, 91, 17);
+    }
+    30%{
+        color: rgb(179, 255, 0);
+    }
+    60%{
+        color: rgb(255, 0, 85);
+    }
+    100%{
+        color: rgb(247, 189, 0);
+    }
+}
+input{
+    border: 0;
+    outline: 0;
+    align-content: center;
+    justify-content: center;
+}
+input:invalid{
+    animation: shake 2s ease 0s  infinite;
+    box-shadow: 0 0 0.6rem #ff0000;
+  }
+ 
+    @keyframes shake {
+    
+
+        0% {transform: translateX(1rem);}
+        50% {transform: translateX(-1rem);}
+        100% {transform: translateX(1rem);}
+      }
+    
+  
+  
